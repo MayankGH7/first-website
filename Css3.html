@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css" media="all">
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Monospace;
+      }
+      :root{
+        --former:#84C754;
+        --latter:#82C753;
+      }
+      body{
+        background: black;
+        color: var(--latter);
+        padding: 20px;
+      }
+      h1{
+        color: var(--former);
+        font-size: 3em;
+      }
+      .main h1+p.first-p{
+        line-height: 40px;
+      
+      }
+      .main ul{
+        margin: 20px;
+      }
+      .main ul li{
+        margin: 15px;
+      }
+      .main ul li a{
+        text-decoration: none;
+        color: var(--latter);
+        font-size: 1.2em;
+      }
+      .main ul li:nth-child(4){
+        color: white;
+      }
+      .main ul li a[href="Css3.html"]{
+         color: white;
+      }
+      .main ul li:hover:not(.active),.main ul li a:hover:not(.active){
+        color: white;
+      }
+      .main .heading-2{
+        margin: 30px 0;
+      }
+      .main .heading-2+p{
+        line-height: 30px;
+      }
+      .main .stylesheets-links-2{
+        
+      }
+      .main .stylesheets-links-2 a{
+        color: var(--latter);
+        color: white;
+        font-size: 1.2em;
+        line-height: 30px;
+      }
+      .main .heading-3{
+        margin: 20px 0;
+      }
+      .main .heading-3+p{
+        line-height: 30px;
+      }
+      .main aside{
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      .main aside h4{
+        color: white;
+        font-size: 20px;
+        margin: 10px 0 ;
+      }
+      .main aside p{
+        color: white;
+        line-height: 25px;
+      }
+      .main footer{
+        border: 1px solid white;
+        padding: 15px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+   <div class="main">
+     <h1>Welcome to My Homepage</h1>
+     <p class="first-p">Use the menu to select different Stylesheets</p>
+     <ul>
+       <li><a href="CSS.html">Stylesheet 1</a></li>
+       <li><a href="Css1.html">Stylesheet 2</a></li>
+       <li><a href="Css2.html">Stylesheet 3</a></li>
+       <li><a href="Css3.html" class="active">Stylesheet 4</a></li>
+       <li><a href="Css0.html">No Stylesheet</a></li>
+     </ul>
+     <h1 class="heading-2">Same Page Different Stylesheets</h1>
+     <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+     <div class="stylesheets-links-2">
+     <a href="CSS.html">Stylesheet 1</a>,
+     <a href="Css1.html">Stylesheet 2</a>,
+     <a href="Css2.html">Stylesheet 3</a>,
+     <a href="Css3.html">Stylesheet 4</a>.
+     <h1 class="heading-3">No Style</h1>
+     <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+     </div>
+     <aside>
+       <h4>Side-Bar</h4>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+     </aside>
+     <footer>
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+     </footer>
+   </div>
+  </body>
+</html>

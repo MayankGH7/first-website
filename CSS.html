@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title></title>
+    <style type="text/css" media="all">
+      .header{
+        background-color: #04A96D;
+        border-radius: 5px;
+        color: white;
+        padding: 1px 0 10px 20px;
+        margin-bottom: 10px;
+      
+      }
+      .head-para{
+        margin-top: 0px;
+        line-height: 30px;
+        
+      }
+      .head-heading{
+        margin-bottom: 0;
+        line-height: 30px;
+        
+      }
+      .nav{
+        border: 1px;
+        border-style: solid;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        border-color: gray;
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius: 5px;
+        padding-left: 3px;
+        background-color: #F0F0F0;
+        
+      }
+      .nav-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .link{
+        margin-bottom: 0;
+        margin-top: 0;
+   
+        }
+      h3{
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+      .nav2{
+        background-color: #04A96D;
+        color: white;
+        font-weight: 500;
+      }
+      .style-text{
+        color: red;
+        text-decoration: none;
+      }
+      .side-bar{
+        background-color: #33A4E8;
+        color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+      .sidebar-para{
+        line-height: 30px;
+      }
+      .footer{
+        margin-top: 20px;
+        background-color: #F0F0F0;
+        background: black;
+        color: white;
+        border: 1px solid gray;
+        border: 1px solid dodgerblu;
+        text-align: justify;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+      }
+      html{
+        user-select: none;
+      }
+       body{
+         background: black;
+         color: white;
+       }
+       a{
+         color: blue;
+       }
+      @media screen and (min-width:400px){
+        body{
+          background: black;
+          color: white;
+        }
+        *{
+          margin: 0
+        }
+        .flexbox{
+          display: flex;
+          flex-direction: row;
+          vertical-align: top;
+        }
+        .nav-grid{
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+          flex-basis: 20%;
+          
+        }
+        .side-bar{
+          width: 15%;
+          margin-left: 10px;
+          padding: 10px;
+          margin-top: 0;
+        }
+        .footer{
+          color: white;
+        }
+        .header{
+          padding-top: 20px;
+          
+        }
+       .f-center{
+         width: 65%;
+       }
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="head-heading">Welcome to my Homepage</h1>
+      <p class="head-para">Use menu to select different  <br /> Stylesheets</p>
+    </div>
+   <div class="flexbox">
+    <div class="nav-grid">
+    <div class="link" >
+     <h3> <a class="nav nav2" href="CSS.html">Stylesheet 1</a> </h3>
+    </div>
+    <div class="link">
+      <h3><a class="nav" href="Css1.html">Stylesheet 2</a></h3>
+    </div>
+    <div class="link">
+      <h3><a class="nav" href="#">Stylesheet 3</a></h3>
+    </div>  
+    
+    <div class="link">
+      <h3><a class="nav" href="#">Stylesheet 4</a></h3>
+    </div>
+    <div class="link">
+      <h3> <a class="nav" href="Css0.html">No Stylesheets</a></h3>
+    </div>
+    </div>
+    <div class="f-center">
+    <h1>Same Page Different Stylesheets</h1>
+    <p>
+      This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+    </p>
+    <a class="style-text" href="CSS.html">Stylesheet 1,</a>
+    <a class="style-text" href="Css1.html">Stylesheet 2,</a>
+    <br />
+    <a class="style-text" href="#">Stylesheet 3,</a>
+    <a class="style-text" href="#">Stylesheet 4.</a>
+    
+    <h2>No Styles</h2>
+    <p>
+      This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+    <a class="style-text" href="Css0.html">No Stylesheet</a>
+    </div>
+    <div class="side-bar">
+    <h2>Sidebar</h2>
+    <aside>
+      <p class="sidebar-para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </aside>
+    </div>
+   </div>
+    <div class="footer">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+      </div>
+  </body>
+</html>
