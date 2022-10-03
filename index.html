@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=no"  />
     <title></title>
     <style type="text/css" media="all">
+      *{
+        box-sizing: border-box;
+
+         font-family: serif;
+        }
       .header{
         background-color: #04A96D;
         border-radius: 5px;
@@ -132,13 +137,90 @@
          width: 65%;
        }
       }
-     
+     .bulbANDsnake{
+
+       display: flex;
+
+       height: 100px;
+
+       width: 100%;
+
+       align-items: center;
+
+       justify-content: space-around;
+
+     }
+
+     .bulb a ,.snake a{
+
+       color: white;
+
+       text-decoration: none;
+
+       padding: 25px;
+
+       border-radius: 10px;
+
+       font-size: 1.2em;
+
+       
+
+     }
+
+     .bulb,.snake{
+
+       animation: anime 3s ease infinite alternate;
+
+     }
+
+     @keyframes anime{
+
+       from{
+
+         transform:perspective(300px) rotatey(0deg);
+
+       }
+
+       to{
+
+         transform:perspective(300px) rotatey(360deg);
+
+       }
+
+     }
+
+     .bulb a{
+
+       background: linear-gradient(red,yellow);
+
+     }
+
+     .snake a{
+
+       background: linear-gradient(blue,cyan);
+
+     }
     </style>
   </head>
   <body>
     <div class="header">
       <h1 class="head-heading">Welcome to my Homepage</h1>
       <p class="head-para">Use menu to select different  <br /> Stylesheets</p>
+    </div>
+    <div class="bulbANDsnake">
+
+      <div class="bulb">
+
+      <a href="bulb.html">Bulb Fila</a>  
+
+      </div>
+
+      <div class="snake">
+
+        <a href="snake.html">Snake Game</a>
+
+      </div>
+
     </div>
    <div class="flexbox">
     <div class="nav-grid">
