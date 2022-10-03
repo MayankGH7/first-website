@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: serif;
+      }
+      body {
+        background: #000;
+        color: white;
+        text-align: center;
+      }
+      img {
+        width: 100vw;
+        height: 80vh;
+        object-fit: contain;
+      }
+      .butcon {
+        height: 19vh;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+      }
+      button {
+        font-weight: 700;
+        color: white;
+        background: dodgerblue;
+        border: 1px solid;
+        font-size: 2em;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        background: red;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="light_bulb_off.png" alt="bulb" id="bulb" />
+    <div class="butcon">
+      <div>
+        <button type="button" onclick="fun()">BULB ON</button>
+      </div>
+      <div>
+        <button type="button" onclick="fun2()">BULB OFF</button>
+      </div>
+    </div>
+    <script>
+      function fun() {
+        document.getElementById("bulb").src = "light_bulb_on.png";
+      }
+      function fun2() {
+        document.getElementById("bulb").src = "light_bulb_off.png";
+      }
+    </script>
+  </body>
+</html>
